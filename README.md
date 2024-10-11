@@ -1,0 +1,1 @@
+This is a working repository for the course Creative Design in University of Oulu.
