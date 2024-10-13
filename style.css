@@ -3,4 +3,5 @@ html, body {
 }
 #start-button {
     position: relative;
+    cursor: default;
 }

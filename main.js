@@ -1,5 +1,6 @@
 window.addEventListener("load", (event) => {
     const startButton = document.getElementById("start-button");
+    const loginButton = document.getElementById("login-button");
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
     startButton.addEventListener("mouseenter", (event) => {
@@ -7,5 +8,13 @@ window.addEventListener("load", (event) => {
         const newY = Math.floor(Math.random() * 100)
         startButton.style.left = `${newX}%`;
         startButton.style.top = `${newY}%`;
+    })
+    loginButton.addEventListener("mouseenter", (event) => {
+        if(loginButton.style.justifySelf==="end") {
+            loginButton.style.justifySelf = "start";
+        }
+        else {
+            loginButton.style.justifySelf = "end";
+        }
     })
 })
