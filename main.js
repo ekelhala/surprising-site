@@ -18,3 +18,11 @@ window.addEventListener("load", (event) => {
         }
     })
 })
+
+let activeSelector = null;
+
+const selectNumber = (number) => {
+    document.getElementById(`d-${activeSelector}`).innerHTML = `${number}`;
+}
+
+const setSelector = (id) => activeSelector = id;
